@@ -3,56 +3,78 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bootstrap portfolio template">
+    <meta name="description" content="Bootstrap portfolio theme">
     <meta name="author" content="Amy Scott">
     <!--DO NOT REMOVE ANYTHING ABOVE THIS LINE -->
 
     <!--Favicon below. Be sure to change it to your own logo :) -->
-    <link rel="icon" href="images/mylogo.png" type="image/x-icon">
+    <link rel="icon" href="http://placegoat.com/30" type="image/x-icon">
     
     <!-- Simply remove my text and replace it with yours below! -->  
-    <title>Portfolio of Amy Scott, Frontend Web Developer</title>
+    <title>Name and profession here</title>
 
     
 
 <!-- Bootstrap core CSS. WARNING: DO NOT CHANGE ANYTHING IN THIS FILE. -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Custom styles. If you want to change font, colors, etc, use the css file below this line -->
+<!-- Custom styles. If you want to change font, colors, etc, use the css file below  -->
 <link href="css/jumbotron.css" rel="stylesheet">
       
 <!-- My current fonts for this project. Check out Google fonts if you'd like to change them! -->      
 <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto&display=swap" rel="stylesheet">
 
+<!--jquery-->
+<script src="/js/jquery-3.5.1.min.js"></script>
+
+<!--Bootstrap JS-->
+<script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+<!--FontAwesome icons-->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+<!-- Custom JS I've written is in this file. Don't edit it unless you know what you're doing :D -->
+<script src="js/cust.js"></script>
+
+
+
 </head>
+
+
 
     
 <body>
 
 <!-- this template utilizes the Font Awesome icon library, which is free to use! Go to https://fontawesome.com/ for instructions! I used custom CSS to change the colors of the icons-->
     
-<nav class="navbar-custom navbar navbar-expand-md navbar-dark fixed-top" role="navigation">
-  <!-- Your logo/branding goes between the a tags below. Use the absolute path to your image. Be sure to use web dev best practices and put your images into a folder. Keep the ID tag if you're going to set your image size in the CSS -->
-    
-  <a class="navbar-brand" id="logo" alt="Amy Scott, Web Developer">AS</a>
-    
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartop" aria-controls="navbartop" aria-expanded="false" aria-label="Toggle navigation" alt="Toggle" title="Toggle navigation">
-    <span class="navbar-icon"></span>
+<nav class="navbar-custom navbar navbar-expand-md navbar-dark fixed-top" id="home" role="navigation">
+  <!-- Your logo/branding goes between the a tags below. Be sure to change the images used - or not. Goats rule.  -->
+  
+  <a class="navbar-brand"><img id="logo" src="http://placegoat.com/30" alt="Your logo"></a>
+
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbartop" aria-controls="navbartop" aria-expanded="false" 
+  aria-label="Toggle navigation" alt="Toggle" title="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
   </button>
+
+  
 
   <div class="collapse navbar-collapse" id="navbartop" alt="Toggle">
     <ul class="navbar-nav mr-auto">
       
+
       <li class="nav-item">
-        <a class="nav-link" href="#" title="Check out my projects. I'm adding more all the time!">Projects</a>
+        <a href="#top" data-toggle="tab" class="anchlink nav-link text-center">About</a>
       </li>
-        
+
       <li class="nav-item">
-        <a class="nav-link" href="#" title="Learn a bit about me">About Me</a>
+        <a href="#projects" data-toggle="tab" class="anchlink nav-link text-center">Projects</a>
       </li>
-        
+
       <li class="nav-item">
-        <a class="nav-link" href="#" title="Get in touch">Contact</a>
+        <a href="#contact" data-toggle="tab" class="anchlink nav-link text-center">Contact</a>
       </li>
      
     </ul>
@@ -61,87 +83,203 @@
 </nav>
     
     
-</svg>
+  
+  
+  
+  
 
 
 
-<!-- Just change the words and it'll type out your choice! No JS! You can also change the header image to whatever you like in the custom CSS-->
+<!-- Just change the words and it'll type out your choice! No JS! You can also change the header image to whatever you like in the custom CSS under jumbotron class-->
 
-<main role="main">   
+<main role="main"> 
+     
     
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid mt-n3" id="top">
         <div class="container">
-            <h2 class="transp">Hi. I'm Amy.</h2>
-            <h2 class="linetwo">I'm a web developer</h2>
-
-
-              
-
+            <h2 class="transp">Line #1</h2>
+            <h2 class="linetwo">Line #2</h2>
         </div>
     </div> 
  <!-- end of jumbotron -->
 
 
 
-<div class="container-fluid">
+<div class="container-fluid">    
+  
+  
+  
+  <!--About section. This is your chance to write an award winning biography about yourself! Be unique! -->
+  
 
-    <!-- Your projects go below this line. Be sure to change the default image - or not. Goats rule. -->
+  <div class="row mb-1">
+
+    <div class="col-12">
+
+      <h5 class="mt-3 ml-3" id="about">About</h5>
+
+      <img src="http://placegoat.com/125" class="float-left mr-3 rounded-circle img-fluid ml-1" id="biopic">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer diam ligula, porttitor 
+          eu consequat tincidunt, tristique sit amet nulla. Phasellus tempus tristique turpis a imperdiet. Vestibulum 
+          elementum nunc non venenatis aliquet. Maecenas porttitor sapien vitae libero pellentesque placerat. Phasellus 
+          gravida purus et massa imperdiet, ut tempor ligula sagittis. Phasellus ut nisl nunc. Nunc sagittis ullamcorper bibendum. 
+          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin odio lectus, tincidunt quis diam ac, congue tempor dui. 
+          Vestibulum at dictum dolor. Vestibulum sollicitudin eros ultrices finibus gravida. Nam bibendum metus magna, non ultricies urna gravida nec. Nam pharetra, tortor at rhoncus ornare, 
+          ex velit varius mi, eget hendrerit dui odio sit amet nisl. In lectus dolor, euismod eget justo sit amet, viverra cursus lectus. Orci varius natoque penatibus et magnis dis parturient 
+          montes, nascetur ridiculus mus. Pellentesque varius urna id consequat consectetur. Proin volutpat sollicitudin viverra. Nunc semper, leo tempus consectetur condimentum, nunc augue 
+          fermentum turpis, in malesuada tortor lectus quis nunc. Etiam porttitor viverra augue ut viverra. Vivamus volutpat dapibus ante id viverra. Aenean faucibus eros velit, vel volutpat 
+          tortor faucibus vitae. In erat erat, bibendum a rutrum id, ullamcorper eget erat. In id ex sit amet risus sollicitudin porta ac a tellus. Curabitur elementum tortor lorem, in 
+          fermentum ligula volutpat non. Etiam viverra enim a sem semper, sed eleifend orci venenatis. Donec non massa non enim blandit rhoncus. Phasellus cursus, arcu sed convallis pharetra, 
+          nunc neque dictum erat, quis auctor felis neque vitae arcu. Integer fermentum accumsan vulputate. Morbi vulputate at arcu vitae mattis. Nullam eu ante quis magna fringilla eleifend. 
+          Praesent aliquam, erat et vestibulum aliquam, turpis massa posuere sem, a blandit purus tellus eu enim. Vestibulum tincidunt arcu fringilla arcu gravida feugiat. Praesent nec ornare 
+          metus.
+        </p>
+    </div>
+    
+  </div>
+
+  
+
+
+    <!-- Your projects go below this line  -->
     <div class="row" id="projects">
       <div>
         <h5 class="mt-3 ml-3">Projects</h5>
           
 
+        <!-- This menu filters your projects by type. Change the class to reflect your project type. -->
         <nav>
       
-          <ul>    
-            <li class="mininav" id="web"><a href="#" class="portlink">Web Development</a></li> |
-            <li class="mininav" id="apps"><a href="#" class="portlink">Apps</a></li> |
-            <li class="mininav" id="api"><a href="#" class="portlink">APIs</a></li>
+          <ul id="filters" class="clearfix">  
+            <li class="mininav" data-filter=".all, .fitype, .sectype, .thtype"><a href="#" class="portlink">All</a></li> |
+            <li class="mininav" data-filter=".all, .fitype"><a href="#" class="portlink">Web Development</a></li> |
+            <li class="mininav" data-filter=".all, .sectype"><a href="#" class="portlink">Apps</a></li> |
+            <li class="mininav" data-filter=".all, .thtype"><a href="#" class="portlink">Browser Console Games</a></li>
           </ul>
       
         </nav>  
 
+      
+        <!--The cards for your projects go below. I used fontawesome icons. For more info and how to impliment them, go to https://fontawesome.com/ -->
+        
 
+      
+        <div class="row my-4 ml-3">
+
+
+          <div class="col-md-5">
+
+            <div class="card procard fitype all mr-4 mb-2">
+              <img class="card-img-top img-fluid" src="http://placegoat.com/288/100" alt="Card image cap">
+
+                <div class="card-body">
+                  <h5 class="card-title">Project title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                
+                </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-3">
+
+            <div class="card procard sectype all ml-4 mb-2">
+              <img class="card-img-top" src="http://placegoat.com/288/100" alt="Card image cap">
+
+                <div class="card-body">
+                  <h5 class="card-title">Project title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                
+                </div>
+            </div>
+
+          </div>
+
+           
+
+          <!-- third card-->
+
+          <!-- <div class="card procard sectype all mr-4 mb-2">
+            <img class="card-img-top" src="http://placegoat.com/288/100" alt="Card image cap">
+
+            <div class="card-body">
+
+              <h5 class="card-title">Project title</h5>
+
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer diam ligula, porttitor 
+                    eu consequat tincidunt, tristique sit amet nulla. 
+                  </p>
+
+                  
+            </div>
+
+          </div> -->
+
+         
+        
           
 
+     
+
+      
+
+
+          
+          
+          
+        </div>
+      
+      
+      
+      
       </div>
     </div>
 
 
- 
     
-    <!--About section. This is your chance to write an award winning biography about yourself! Be unique! -->
-    <div class="row" id="about">
-      <div>
-        <h5 class="mt-3 ml-3">About Me</h5>
 
-          <p class="ml-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer diam ligula, porttitor 
-          eu consequat tincidunt, tristique sit amet nulla. Phasellus tempus tristique turpis a imperdiet. Vestibulum 
-          elementum nunc non venenatis aliquet. Maecenas porttitor sapien vitae libero pellentesque placerat. Phasellus 
-          gravida purus et massa imperdiet, ut tempor ligula sagittis. Phasellus ut nisl nunc. Nunc sagittis ullamcorper bibendum. 
-          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin odio lectus, tincidunt quis diam ac, congue tempor dui. 
-          Vestibulum at dictum dolor.
-          </p>
-      
-      </div>
-    </div>  
-      
-    
+
+    <!-- End of project section-->
+
+  
     <!-- Contact form. Be sure to change the email address the form gets sent to please. -->
     <div class="row" id="contact">
       <div>
-        <h5 class="mt-3 ml-3" alt="contact">Contact</h5>
+        <h5 class="mt-3 ml-3 headers" alt="contact">Contact</h5>
         
-        <p class="ml-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer diam ligula, porttitor 
-          eu consequat tincidunt, tristique sit amet nulla. Phasellus tempus tristique turpis a imperdiet. Vestibulum 
-          elementum nunc non venenatis aliquet. Maecenas porttitor sapien vitae libero pellentesque placerat. Phasellus 
-          gravida purus et massa imperdiet, ut tempor ligula sagittis. Phasellus ut nisl nunc. Nunc sagittis ullamcorper bibendum. 
-          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin odio lectus, tincidunt quis diam ac, congue tempor dui. 
-          Vestibulum at dictum dolor. 
-          
-         
+        <form id="contactform" class="mx-4 my-2 rounded">
+          <div class="form-row">
 
-        </p>
+            <div class="form-group col-md-6">
+              <label for="inputfirstname">First Name</label>
+              <input type="text" class="form-control" placeholder="First Name">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="inputlastname">Last Name</label>
+              <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+
+          </div>
+
+
+          <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+          </div>
+
+          <div class="btn-group">
+            <button type="submit" class="btn btncon mr-3 rounded">Submit</button>
+            <button type="reset" class="btn btncon rounded">Clear Form</button>
+          </div>
+
+
+        </form>  
 
      
 
@@ -149,24 +287,6 @@
 
       </div>
     </div>  
-
-
-    <div class="row" id="about">
-      <div>
-        <h5 class="mt-3 ml-3">About Me</h5>
-
-          <p class="ml-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer diam ligula, porttitor 
-          eu consequat tincidunt, tristique sit amet nulla. Phasellus tempus tristique turpis a imperdiet. Vestibulum 
-          elementum nunc non venenatis aliquet. Maecenas porttitor sapien vitae libero pellentesque placerat. Phasellus 
-          gravida purus et massa imperdiet, ut tempor ligula sagittis. Phasellus ut nisl nunc. Nunc sagittis ullamcorper bibendum. 
-          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin odio lectus, tincidunt quis diam ac, congue tempor dui. 
-          Vestibulum at dictum dolor.
-          </p>
-      
-      </div>
-    </div>   
-
-
 
 </div> 
 
@@ -192,6 +312,7 @@
         
 </main>    
 
+<hr id="sep">
 
 <!--Footer -->
 <footer class="bot-custom">
@@ -200,64 +321,41 @@
       
 
 
-          <span id="back"> 
-
-            <!--Heart icon-->
-            Made with 
-
-            <svg viewBox="0 0 512 512" aria-label="Red heart" class="fas fa-heart icons" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="heart">
-              <path fill-rule="evenodd" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/>
-            
-            </svg>
-            
-            in
-            <!--Bootstrap icon-->      
-            <a href="https://www.getbootstrap.com/" title="Download Bootstrap!">
-              <svg viewBox="0 0 448 512" aria-label="Get Bootstrap!" class="fab fa-bootstrap icons" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="boot">
-                <path fill-rule="evenodd" d="M292.3 311.93c0 42.41-39.72 41.43-43.92 41.43h-80.89v-81.69h80.89c42.56 0 43.92 31.9 43.92 40.26zm-50.15-73.13c.67 0 38.44 1 38.44-36.31 0-15.52-3.51-35.87-38.44-35.87h-74.66v72.18h74.66zM448 106.67v298.66A74.89 74.89 0 0 1 373.33 480H74.67A74.89 74.89 0 0 1 0 405.33V106.67A74.89 74.89 0 0 1 74.67 32h298.66A74.89 74.89 0 0 1 448 106.67zM338.05 317.86c0-21.57-6.65-58.29-49.05-67.35v-.73c22.91-9.78 37.34-28.25 37.34-55.64 0-7 2-64.78-77.6-64.78h-127v261.33c128.23 0 139.87 1.68 163.6-5.71 14.21-4.42 52.71-17.98 52.71-67.12z">
-              </svg>  
-            </a>
-
-            
-
-            
-            
-            
           
+
             
-            <!--Wheelchair-->
+            <!--Bootstrap. DO NOT REMOVE -->  
+            
+            
+            <a href="https://www.amycodes.net/" class="footlinks">
+              <svg viewBox="0 0 448 512" aria-label="Bootstrap!" class="fab fa-bootstrap icons" fill="currentColor" 
+              xmlns="http://www.w3.org/2000/svg" id="boot" alt="bootstrap icon">
+                <path fill-rule="evenodd" d="M292.3 311.93c0 42.41-39.72 41.43-43.92 41.43h-80.89v-81.69h80.89c42.56 
+                0 43.92 31.9 43.92 40.26zm-50.15-73.13c.67 0 38.44 1 38.44-36.31 0-15.52-3.51-35.87-38.44-35.87h-74.66v72.18h74.66zM448 
+                106.67v298.66A74.89 74.89 0 0 1 373.33 480H74.67A74.89 74.89 0 0 1 0 405.33V106.67A74.89 74.89 0 0 1 
+                74.67 32h298.66A74.89 74.89 0 0 1 448 106.67zM338.05 317.86c0-21.57-6.65-58.29-49.05-67.35v-.73c22.91-9.78 37.34-28.25 37.34-55.64 0-7 2-64.78-77.6-64.78h-127v261.33c128.23 0 139.87 
+                1.68 163.6-5.71 14.21-4.42 52.71-17.98 52.71-67.12z">
+              </svg> 
+            </a> 
+            theme by Amy Scott
+            
 
-              <a href="https://www.ssa.gov/accessibility/andi/help/howtouse.html" title="Website developed using ANDI.">
-                <svg viewBox="0 0 448 512" aria-label="Accessibility" class="fab fa-accessible-icon icons float-right mt-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="access">
-                  <path fill-rule="evenodd" d="M423.9 255.8L411 413.1c-3.3 40.7-63.9 35.1-60.6-4.9l10-122.5-41.1 2.3c10.1 20.7 15.8 43.9 15.8 68.5 0 41.2-16.1 78.7-42.3 106.5l-39.3-39.3c57.9-63.7 13.1-167.2-74-167.2-25.9 0-49.5 9.9-67.2 26L73 243.2c22-20.7 50.1-35.1 81.4-40.2l75.3-85.7-42.6-24.8-51.6 46c-30 26.8-70.6-18.5-40.5-45.4l68-60.7c9.8-8.8 24.1-10.2 35.5-3.6 0 0 139.3 80.9 139.5 81.1 16.2 10.1 20.7 36 6.1 52.6L285.7 229l106.1-5.9c18.5-1.1 33.6 14.4 32.1 32.7zm-64.9-154c28.1 0 50.9-22.8 50.9-50.9C409.9 22.8 387.1 0 359 0c-28.1 0-50.9 22.8-50.9 50.9 0 28.1 22.8 50.9 50.9 50.9zM179.6 456.5c-80.6 0-127.4-90.6-82.7-156.1l-39.7-39.7C36.4 287 24 320.3 24 356.4c0 130.7 150.7 201.4 251.4 122.5l-39.7-39.7c-16 10.9-35.3 17.3-56.1 17.3z">
-                </svg>
-              </a>
+            <!--end of bootstrap-->
 
-    
-
-
-            <!--LinkedIn icon-->
-            <a href="#" title="LinkedIn">      
-              <svg viewBox="0 0 448 512" aria-label="LinkedIn" class="fab fa-linkedin icons float-right mt-4 mr-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="linkedin">
-                  <path fill-rule="evenodd" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
-              </svg>      
+            
+            
+            
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com" title="LinkedIn" class="footlinks">
+              <span class="fab fa-linkedin icons float-right my-4" aria-hidden="true" id="linkedin" alt="linkedin icon"></span>
             </a>
-
-            <!--Github icon-->
-            <a href="#" title="Github">
-              <svg viewBox="0 0 496 512" aria-label="GitHub" class="fab fa-github icons float-right mt-4 mr-1" fill="currentcolor" xmlns="http://www.w3.org/2000/svg" id="github">
-                <path fill-rule="evenodd" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
-              </svg>
-            </a>
-
-      
           
      
             
           
 
           
-          </span>
+          
 
    
   
@@ -278,16 +376,22 @@
    
 
 
-    <!-- Do not remove anything below or you'll have more trouble than trying to find an unclosed tag while coding at 3am. I mean.... what?  -->
+    <!-- Do not remove anything below or you'll have more trouble than I do trying to find an unclosed tag while coding at 3am. I mean.... what? -->
     
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    
-    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="js/bootstrap.bundle.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossOrigin="anonymous"></script>
+      
+    <script>window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==" crossorigin="anonymous"><\/script>')</script>
+ -->
+     <!--  <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+
+     <!--jQuery -->
+ 
+ 
     
     
     
 </body>
 </html>
+
