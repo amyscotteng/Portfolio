@@ -8,19 +8,20 @@ body {
     font-family: 'Krona One', sans-serif;
     margin-bottom: 60px;
     background-color: #D4D4DC;
+    overflow-x: hidden;
     
 }
 
-/* This allows smooth scrolling. However, it does NOT work with Safari. I have attached a JS file which takes care of that */
+
 html {
-    scroll-behavior: smooth;
     position: relative;
     min-height: 100%;
 }
 
-p, .btn {
+p {
     font-family: 'Roboto', sans-serif;
     font-size: 12x;
+    color: #000;
 }
 
 .btn-cust {
@@ -35,72 +36,87 @@ p, .btn {
     border-color: #D4D4DC;
 }
 
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 56px;
-    }
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(254,218,106,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    width: 20px;
+    height: 20px;
 }
+  
+.custom-toggler.navbar-toggler {
+    border-color: #FEDA6A;
+} 
 
 
-
-
-/* The following customizes the navbar links and you can change it to whatever you like. */ 
-
-
-
-.navbar-custom .navbar-nav .nav-link, .portlink {
-    color: #FEDA6A; 
-}
-
-.nav-item.visited, .portlink.visited {
-    color: #D4D4DC;
-}
-
+/* The following customizes the navigation links*/ 
 
 .navbar-custom {
     background-color: #393F4D;
     font-size: 15px;
-    color: #FFF;
 }
 
-
-
-/* change the color of active or hovered links. This includes the links under the project section. Text-decortation: none, removes the underline while hovering over links.  */
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link,
-.portlink .portlink.active,
-.portlink:hover
-
-{
-    color: #FFF;
+nav .navbar-nav .nav-item > .anchlink,
+nav .filters .mininav {
+    color: #FEDA6A;
     text-decoration: none;
+    z-index: 100;
+
 }
+
+a.portlink, a.anchlink {
+    color: #FEDA6A;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+a.portlink:hover, a.anchlink:hover {
+    color: #FFF;
+}
+
+a.anchlink::after {    
+    background: none repeat scroll 0 0 #FEDA6A;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transition: width 0.8s ease 0s, left 0.8s ease 0s;
+    width: 0;
+}
+
+a.anchlink:hover::after { 
+    width: 100%; 
+    left: 0; 
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #FEDA6A;
+}  
+
+
+
 
 
 /* this is for your logo */
 #logo {
-    overflow: hidden;
-    white-space: nowrap;
     margin: 0 auto;
-    letter-spacing: 5px;
-    -webkit-text-stroke: 1.5px #FEDA6A;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    background-image:url("http://placegoat.com/200/200");   
     display: inline-flex;
 }
 
 
+
+
+
 /* this is for the jumbotron! change this to suit your needs. FYI you change the color of the font in the .transp and .linetwo classes respectively */
 .jumbotron {
-    background-image: url("../images/codingbw.png");
+    background-color: #5c6064;
+    /* Use the below line if you'd like to use an image instead of a color. the two dots and forward slash will allow you to select the folder your image is in
+    background-image: url(../);
+    */
     margin-bottom: 0px;
     display: block;
     position: relative;
     opacity: 0.85;
-    
 }
 
 
@@ -160,32 +176,23 @@ p, .btn {
     }
 }
 
+/* This is the about section */
+
+/* This make text hug the outside of the image */
+#biopic {
+    shape-outside: circle(50%);
+}
    
-/* This is where you customize the color for the project section. Note that I used the same background and font color for the contact section as well */
+/* This is the project section */
 
-.bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-}
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-    }
-}
-
-#projects, #contact {
+#projects {
     background-color: #393F4D;
     color: #FFF;
-    
 }
 
 .mininav {
-    list-style-type: none;
+    list-style-type: none; 
+    text-decoration: none;
     display: inline;
     font-size: 12px;
 }
@@ -193,18 +200,80 @@ p, .btn {
 
 
 
+.procard {
+    background-color: #D4D4DC;
+    width: 288px;
+    
+}
+
+.card-title, .card-text {
+    color: #000;
+}
+
+.btn {
+    background-color: #393F4D;
+}
+
+.btn:hover {
+    background-color: #5c6064;
+}
+
+
+#btnfir {
+    color: #FEDA6A;
+}
+
+
+/* I filled in the area behind the icon using linear-gradient. You'll need to play with the percentages depending on the icon you use. */
+#btnsec{
+    color:#ff3366;
+    background:linear-gradient(#FFF,#FFF) center/73% 75% no-repeat;
+}
+
+
+#btnthi {
+    color: #FFF;
+}
 
 
 
-/* This is the about me section */
-#about {
+
+
+
+
+
+
+
+
+/* These are the colors for the about and contact sections */
+#about, #contact {
     background-color: #D4D4DC;
     
 }
 
-/* This is the contact section. Be sure to change the email address! */
+/* Contact form */
+#contactform {
+    background-color: #393F4D;
+    padding: 15px;
+}
 
+label {
+    color: #FFF;
+}
 
+.form-group, .btncon, .form-control {
+    font-size: 12px;
+}
+
+.btncon {
+    background-color: #D4D4DC;
+}
+
+.btncon:hover {
+    color: #FFF;
+}
+
+/*  */
 
 
 /* This is the footer*/
@@ -215,20 +284,23 @@ p, .btn {
     width: 100%;
     height: 60px; 
     line-height: 60px; 
+    font-size: 12px;;
     background-color: #393F4D;
     color: #FEDA6A;
 }
 
+/* the sep below is a simple horizontal ruler. Feel free to change the color */
+
+#sep {
+    background-color: #FEDA6A;
+}
+
 .icons {
-    width: 14px;
-    height: 14px;
+    width: 15px;
+    height: 15px;
 }
 
-#heart {
-    color: #D34D4D; 
-}
-
-
+/*These are the icons used in the footer. The linear gradient in these cases is simply the secondary fill color.*/
 
 #boot  {
     color: #7952b3;
@@ -236,52 +308,23 @@ p, .btn {
     background-repeat: no-repeat;
     background-size: 50% 50%;
     background-position: center;
+    vertical-align: baseline;
 }
 
 
 #linkedin  {
     background-image: linear-gradient(#fff,#fff);
     background-repeat: no-repeat;
-    background-size: 75% 75%;
-    background-position: center;
-}
-
-
-#github {
-    color: #FFF;
-    background-image: linear-gradient(#000,#000);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    border-radius: 50%;
-}
-
-#github:hover {
-    color: #FFF;
-    background-image: linear-gradient(#5c6064, #5c6064);
-    border-radius: 50%;
-    filter: invert(100%);
-}
-
-#github, #github:hover, #linkedin, #linkedin:hover {
-    transition: -webkit-filter 1s, filter 1s;
-    transition-property: -webkit-filter, filter;
-    transition-duration: 1s, 1s;
-    transition-timing-function: ease-in, ease-out;
-    transition-delay: 0s, 0s;
-}
-
-#access:hover {
-    color: #FFF;
-
-}
-
-#linkedin {
+    background-size: 65% 65%;
     color: #0077b5;
 }
 
-#linkedin:hover {
-    filter: drop-shadow(1px 1px #FFF);
+.footlinks {
+    text-decoration: none;
+    width: 20px;
+    height: 20px;
 }
+
+
 
 
