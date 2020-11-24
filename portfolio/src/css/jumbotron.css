@@ -5,23 +5,27 @@ Let's keep the web accesible for all :) */
 
 body {
     padding-top: 56px;
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     margin-bottom: 60px;
     background-color: #D4D4DC;
-    overflow-x: hidden;
-    
+    min-width: 100%;
+
 }
 
 
 html {
     position: relative;
-    min-height: 100%;
+    min-width: 100%;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12x;
+    
+    font-size: 20px;
     color: #000;
+}
+
+.container {
+    width: 100%;
 }
 
 .btn-cust {
@@ -51,7 +55,7 @@ p {
 
 .navbar-custom {
     background-color: #393F4D;
-    font-size: 15px;
+    
 }
 
 nav .navbar-nav .nav-item > .anchlink,
@@ -59,6 +63,7 @@ nav .filters .mininav {
     color: #FEDA6A;
     text-decoration: none;
     z-index: 100;
+    font-size: 18px;
 
 }
 
@@ -67,6 +72,7 @@ a.portlink, a.anchlink {
     text-decoration: none;
     display: inline-block;
     position: relative;
+    
 }
 
 a.portlink:hover, a.anchlink:hover {
@@ -94,7 +100,9 @@ a.anchlink:hover::after {
 }  
 
 
-
+.mininav, .navbar-custom {
+    font-size: 16px;
+}
 
 
 /* this is for your logo */
@@ -107,15 +115,11 @@ a.anchlink:hover::after {
 
 
 
-/* this is for the jumbotron! change this to suit your needs. FYI you change the color of the font in the .transp and .linetwo classes respectively */
+/* jumbotron */
 .jumbotron {
-    background-color: #5c6064;
-    /* Use the below line if you'd like to use an image instead of a color. the two dots and forward slash will allow you to select the folder your image is in
-    background-image: url(../);
-    */
-    margin-bottom: 0px;
-    display: block;
-    position: relative;
+    
+    background-image: url(../images/codingbw.png);
+    justify-content: center;
     opacity: 0.85;
 }
 
@@ -125,36 +129,35 @@ a.anchlink:hover::after {
 
 
 /* The following two items are for the first line which types out */
-.transp {
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    padding-bottom: 5px;
-    letter-spacing: 5px;
-    animation: 
-        typing 3.5s steps(40,end),
-        blink-caret .75s steps(50,end) infinite;
-    -webkit-text-stroke: 1.5px #FEDA6A;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: #FEDA6A; 
-    background-repeat: no-repeat;
-    display: inline-flex;
+.typing {
+    overflow: hidden; 
+  border-right: 20px solid #FEDA6A; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: 2px; 
+  animation: animated-text 
+    4s steps(40,end) 1s 1 normal both,
+    animated-cursor 800ms steps(40,end) infinite;
+  justify-content: center;  
+  color: #FEDA6A;
+  font-weight: 500;
 }
 
-@keyframes typing {
-    from {
-        width: 0
-    }
-    
-    to {
-        width: 100%
-    }
-}
+/* The typing effect */
+@keyframes animated-text {
+    from{width: 0;}
+    to{width: 220px;}
+  }
+
+/* The typewriter cursor effect */
+@keyframes animated-cursor{
+    from{border-right-color: #FEDA6A; }
+    to{border-right-color: transparent;}
+  }
 
 /* This is for line two, which fades in */
 
-.linetwo {
+.fading {
     animation: 
         fadeIn ease 7s forwards ,
         blink-caret .75s steps(50,end) infinite;
@@ -176,13 +179,22 @@ a.anchlink:hover::after {
     }
 }
 
+
+
 /* This is the about section */
 
 /* This make text hug the outside of the image */
 #biopic {
     shape-outside: circle(50%);
+    width: 150px;
+    height: 150px;
 }
-   
+
+#heart {
+    color: #FF0000;
+}
+
+
 /* This is the project section */
 
 #projects {
@@ -194,50 +206,73 @@ a.anchlink:hover::after {
     list-style-type: none; 
     text-decoration: none;
     display: inline;
-    font-size: 12px;
-}
-
-
-
-
-.procard {
-    background-color: #D4D4DC;
-    width: 288px;
     
 }
 
-.card-title, .card-text {
+
+
+
+.card {
+    width: 288px;
+    height: 290px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+    
+}
+
+.card-text {
+    font-size: 18px;
+}
+  
+  .opac {
+    opacity: 0.9;
+  }
+  
+  .card-face {
+    position: absolute;
+    width: 288px;
+    height: 290px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .back {
+    background-color: #9C9C9C;
     color: #000;
-}
-
-.btn {
-    background-color: #393F4D;
-}
-
-.btn:hover {
-    background-color: #5c6064;
-}
-
-
-#btnfir {
-    color: #FEDA6A;
-}
-
-
-/* I filled in the area behind the icon using linear-gradient. You'll need to play with the percentages depending on the icon you use. */
-#btnsec{
-    color:#ff3366;
-    background:linear-gradient(#FFF,#FFF) center/73% 75% no-repeat;
-}
-
-
-#btnthi {
+    transform: rotateY(180deg);
+  }
+  
+  
+  .front, .back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flipped {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  
+  .btn {
+    background-color: #737373;
     color: #FFF;
+  }
+  
+  .btn:hover {
+    background-color: #bfbfbf;
+    color: #000;
+    text-decoration: none;
+  }
+
+
+
+.heads {
+    font-weight: 300;
 }
-
-
-
-
 
 
 
@@ -266,11 +301,11 @@ label {
 }
 
 .btncon {
-    background-color: #D4D4DC;
+    background-color: #1D1E22;
 }
 
 .btncon:hover {
-    color: #FFF;
+    color: #000;
 }
 
 /*  */
@@ -278,45 +313,53 @@ label {
 
 /* This is the footer*/
 
-.bot-custom {
-    position: absolute;
-    bottom: 0;
+#bot-custom {
+    
     width: 100%;
     height: 60px; 
     line-height: 60px; 
-    font-size: 12px;;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     background-color: #393F4D;
     color: #FEDA6A;
 }
 
-/* the sep below is a simple horizontal ruler. Feel free to change the color */
 
-#sep {
-    background-color: #FEDA6A;
-}
+    
+  
+
+
+
+
 
 .icons {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
+    background-image: linear-gradient(#fff,#fff);
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
 
 /*These are the icons used in the footer. The linear gradient in these cases is simply the secondary fill color.*/
 
 #boot  {
     color: #7952b3;
-    background-image: linear-gradient(#fff,#fff);
-    background-repeat: no-repeat;
     background-size: 50% 50%;
-    background-position: center;
-    vertical-align: baseline;
 }
 
 
-#linkedin  {
-    background-image: linear-gradient(#fff,#fff);
-    background-repeat: no-repeat;
+#linkedin  {    
     background-size: 65% 65%;
     color: #0077b5;
+}
+
+#heart {
+    color: #FF0000;
+    width: 20px;
+    height: 20px;
 }
 
 .footlinks {

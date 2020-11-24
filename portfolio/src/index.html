@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Bootstrap portfolio theme">
+    <meta name="author" content="Amy Scott">
+    <!--DO NOT REMOVE ANYTHING ABOVE THIS LINE -->
+
+    <!--Favicon below. Be sure to change it to your own logo :) -->
+    <link rel="icon" href="http://placekitten.com/30" type="image/x-icon">
+    
+    <!-- Simply remove my text and replace it with yours below! -->  
+    <title>Name and profession here</title>
+
+    
+
+<!-- Bootstrap core CSS. WARNING: DO NOT CHANGE ANYTHING IN THIS FILE. -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles. If you want to change font, colors, etc, use the css file below  -->
+<link href="css/jumbotron.css" rel="stylesheet">
+      
+<!-- My current fonts for this project. Check out Google fonts if you'd like to change them! -->      
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web&display=swap" rel="stylesheet">
+
+<!--jquery-->
+<script src="js/jquery-3.5.1.js"></script>
+
+<!--Bootstrap JS-->
+<script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+<!--FontAwesome icons-->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+<!-- Custom JS I've written is in this file. Don't edit it unless you know what you're doing :D -->
+<script src="js/cust.js"></script>
+
+
+
+</head>
+
+
+
+    
+<body>
+
+<!-- this template utilizes the Font Awesome icon library, which is free to use! Go to https://fontawesome.com/ for instructions! I used custom CSS to change the colors of the icons-->
+    
+<nav class="navbar-custom navbar navbar-expand-md navbar-dark fixed-top" role="navigation">
+  <!-- Your logo/branding goes between the a tags below. Be sure to change the images used - or not. Goats rule.  -->
+  
+  <a class="navbar-brand"><img id="logo" src="http://placekitten.com/30" alt="Your logo"></a>
+
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbartop" aria-controls="navbartop" aria-expanded="false" 
+  aria-label="Toggle navigation" alt="Toggle" title="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+
+  <div class="collapse navbar-collapse" id="navbartop" alt="Toggle">
+    <ul class="navbar-nav mr-auto">
+      
+
+      <li class="nav-item">
+        <a href="#about" data-toggle="tab" class="anchlink nav-link text-center">About</a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#projects" data-toggle="tab" class="anchlink nav-link text-center">Projects</a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#contact" data-toggle="tab" class="anchlink nav-link text-center">Contact</a>
+      </li>
+     
+    </ul>
+    
+  </div>
+</nav>
+    
+    
+  
+  
+  
+  
+
+
+
+<!-- Just change the words and it'll type out your choice! No JS! You can also change the header image to whatever you like in the custom CSS under jumbotron class-->
+
+
+      
+    
+  
+<!--
+    <div class="jumbotron" id="home">
+      <div class="container text-center">
+        <h2 class="transp">Line #1</h2>
+        <h2 class="linetwo">Line #2</h2>
+      </div>
+    </div>
+  end of jumbotron -->
+
+  <div class="jumbotron jumbotron-fluid py-2" id="home">
+    <div class="container text-center">
+      <h2 class="fading pt-5 mt-3">Hi. I'm Amy.</h2>
+      <h2 class="typing py-5">I am a </h2>
+    </div>
+  </div>
+
+<main role="main">
+
+<div class="container-fluid">    
+  
+  
+  
+  <!--About section. This is your chance to write an award winning biography about yourself! Be unique! -->
+  
+
+  <div class="row my-n5 py-1 px-3" id="projects">
+    
+
+    <div class="row">
+
+      <div class="col-md-12"><h2 class="heads text-center pb-1">I am a front-end web developer. </h2></div>
+     
+        <div class="col-md-6">
+      
+          
+          <img src="images/ANW-79.jpg" class="float-left mx-4 rounded-circle mt-3" id="biopic">
+          
+          <p>I have been coding for many years and still love it as much as I did on day one. I have seen many changes over the 
+          years but I've kept up. Coding is awesome and I love learning all of the new things that are coming
+          out. I get a great sense of joy and pride when I've learned something new. But I have many other interests aside from coding.
+          </p>  
+
+        </div>  
+     
+        <div class="col-md-6">
+
+          <p>
+            Everyone needs a break once in a while! Those include camping, going to concerts 
+            with friends, swimming, taekwondo, Bigfoot, watching HGTV, and video games. I enjoy a variety 
+            of game types including MMOs and puzzle games.  I am also a huge TMNT fan and still have all 50 of my action figures from 
+            when I was growing up. They are my most prized possessions. Most importantly: I love sourdough bread.
+            </p>
+
+        </div>
+
+
+      
+
+
+    </div>
+
+  </div>
+    
+
+    
+    
+  
+
+  
+<!--end about section -->
+
+    <!-- Projects  -->
+    <div class="row mb-1 my-3 px-3 py-4" id="projects">
+    
+      <div class="col-md-12">
+        <h2 class="heads text-center py-2">Projects </h2>
+      
+      
+        <div class="row justify-content-center">
+
+              <nav class="py-2">
+      
+                <ul id="filters" class="clearfix">  
+                  <li class="mininav" data-filter=".all, .fitype, .sectype, .thtype"><a href="#" class="portlink">All</a></li> |
+                  <li class="mininav" data-filter=".all, .fitype"><a href="#" class="portlink">Web Development</a></li> |
+                  <li class="mininav" data-filter=".all, .sectype"><a href="#" class="portlink">Apps</a></li> |
+                  <li class="mininav" data-filter=".all, .thtype"><a href="#" class="portlink">Browser Console Games</a></li>
+                </ul>
+            
+              </nav>
+
+        </div>  
+      </div>  
+
+        
+            
+          <div class="row mx-auto">
+
+            <div class="card-deck ml-4 ">
+    
+             <!-- Border-0 gets rid of the default Bootstrap border -->   
+                  
+                <!-- card one -->
+                 <div class="card click-card rounded border-0">
+                   
+                   
+                   <div class="front card-face">
+                   <img class="card-img rounded opac" src="http://placekitten.com/288/290" alt="Card image cap">
+                     <div class="card-img-overlay">
+                       <h5 class="card-title text-center my-5 py-5">Card title</h5>
+                     </div>
+                   </div>  
+                   
+                  
+                   <div class="back card-face rounded text-center">
+                     <div class="card-body mt-3">
+                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ultrices mauris, vel egestas metus. Pellentesque ante sem, commodo hendrerit laoreet quis, dictum vitae risus. </p>
+                         <a class="btn btn-link mt-1" href="https://getbootstrap.com/" target="_blank">
+                           <i class="fas fa-link pull-left ml-n1 px-2 "></i>Link
+                         </a> 
+                     </div>
+                   </div>  
+                   
+                   
+                 </div> 
+                 <!-- end of card one -->
+
+
+                 <!-- card two  -->
+                 <div class="card click-card rounded border-0">
+                   
+                   
+                  <div class="front card-face">
+                  <img class="card-img rounded opac" src="http://placekitten.com/288/290" alt="Card image cap">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title text-center my-5 py-5">Card title</h5>
+                    </div>
+                  </div>  
+                  
+                 
+                  <div class="back card-face rounded text-center">
+                    <div class="card-body mt-3">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ultrices mauris, vel egestas metus. Pellentesque ante sem, commodo hendrerit laoreet quis, dictum vitae risus. </p>
+                        <a class="btn btn-link mt-1" href="https://getbootstrap.com/" target="_blank">
+                          <i class="fas fa-link pull-left ml-n1 px-2 "></i>Link
+                        </a> 
+                    </div>
+                  </div>  
+                  
+                  
+                </div> 
+               <!--  end of card two -->
+
+               <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+
+              <!-- card three  -->
+              <div class="card click-card rounded border-0">
+                   
+                   
+                <div class="front card-face">
+                <img class="card-img rounded opac" src="http://placekitten.com/288/290" alt="Card image cap">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title text-center my-5 py-5">Card title</h5>
+                  </div>
+                </div>  
+                
+               
+                <div class="back card-face rounded text-center">
+                  <div class="card-body mt-3">
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ultrices mauris, vel egestas metus. Pellentesque ante sem, commodo hendrerit laoreet quis, dictum vitae risus. </p>
+                      <a class="btn btn-link mt-1" href="https://getbootstrap.com/" target="_blank">
+                        <i class="fas fa-link pull-left ml-n1 px-2 "></i>Link
+                      </a> 
+                  </div>
+                </div>  
+                
+                
+              </div> 
+             <!--  end of card three -->
+
+             <!-- card four  -->
+             <div class="card click-card rounded border-0">
+                   
+                   
+              <div class="front card-face">
+              <img class="card-img rounded opac" src="http://placekitten.com/288/290" alt="Card image cap">
+                <div class="card-img-overlay">
+                  <h5 class="card-title text-center my-5 py-5">Card title</h5>
+                </div>
+              </div>  
+              
+             
+              <div class="back card-face rounded text-center">
+                <div class="card-body mt-3">
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ultrices mauris, vel egestas metus. Pellentesque ante sem, commodo hendrerit laoreet quis, dictum vitae risus. </p>
+                    <a class="btn btn-link mt-1" href="https://getbootstrap.com/" target="_blank">
+                      <i class="fas fa-link pull-left ml-n1 px-2 "></i>Link
+                    </a> 
+                </div>
+              </div>  
+              
+              
+            </div> 
+           <!--  end of card four -->
+
+           <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+
+           <!-- card five  -->
+           <div class="card click-card rounded border-0">
+                   
+                   
+            <div class="front card-face">
+            <img class="card-img rounded opac" src="http://placekitten.com/288/290" alt="Card image cap">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-center my-5 py-5">Card title</h5>
+              </div>
+            </div>  
+            
+           
+            <div class="back card-face rounded text-center">
+              <div class="card-body mt-3">
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ultrices mauris, vel egestas metus. Pellentesque ante sem, commodo hendrerit laoreet quis, dictum vitae risus. </p>
+                  <a class="btn btn-link mt-1" href="https://getbootstrap.com/" target="_blank">
+                    <i class="fas fa-link pull-left ml-n1 px-2 "></i>Link
+                  </a> 
+              </div>
+            </div>  
+            
+            
+          </div> 
+         <!--  end of card five -->
+
+
+
+
+
+            </div>
+            <!-- end of deck -->
+
+
+          </div>  
+          <!-- end of row--> 
+
+
+
+            
+  
+        
+      
+      
+  
+  
+      
+  
+    </div>
+
+        
+          
+
+        <!-- This menu filters your projects by type. Change the class to reflect your project type. -->
+        <!-- <nav>
+      
+          <ul id="filters" class="clearfix">  
+            <li class="mininav" data-filter=".all, .fitype, .sectype, .thtype"><a href="#" class="portlink">All</a></li> |
+            <li class="mininav" data-filter=".all, .fitype"><a href="#" class="portlink">Web Development</a></li> |
+            <li class="mininav" data-filter=".all, .sectype"><a href="#" class="portlink">Apps</a></li> |
+            <li class="mininav" data-filter=".all, .thtype"><a href="#" class="portlink">Browser Console Games</a></li>
+          </ul>
+      
+        </nav>   -->
+
+      
+        <!--The cards for your projects go below. I used fontawesome icons. For more info and how to impliment them, go to https://fontawesome.com/ -->
+        
+
+      <!--
+        <div class="row my-4 ml-3">
+
+
+          
+
+            <div class="card-deck ml-2">
+    
+               Border-0 gets rid of the default Bootstrap border -->    
+                   <!-- card one -->
+                   <!-- <div class="card click-card rounded border-0">
+                    
+                    
+                    <div class="front card-face">
+                    <img class="card-img rounded opac" src="http://placekitten.com/288/290" alt="Card image cap">
+                      <div class="card-img-overlay">
+                        <h5 class="card-title text-center my-5 py-5">Card title</h5>
+                      </div>
+                    </div>  
+                    
+                   
+                    <div class="back card-face rounded text-center">
+                      <div class="card-body mt-3">
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ultrices mauris, vel egestas metus. Pellentesque ante sem, commodo hendrerit laoreet quis, dictum vitae risus. </p>
+                          <a class="btn btn-link mt-1" href="https://getbootstrap.com/" target="_blank">
+                            <i class="fas fa-link pull-left ml-n1 px-2 "></i>Link
+                          </a> 
+                      </div>
+                    </div>  
+                    
+                    
+                  </div>     -->          
+                  
+                  
+                  <!-- card two -->
+                  
+                  <!-- <div class="card click-card rounded border-0">
+                    
+                    
+                    <div class="front card-face">
+                    <img class="card-img rounded opac" src="http://placekitten.com/288/290" alt="Card image cap">
+                      <div class="card-img-overlay">
+                        <h5 class="card-title text-center my-5 py-5">Card title</h5>
+                      </div>
+                    </div>  
+                    
+                   
+                    <div class="back card-face rounded text-center">
+                      <div class="card-body mt-3">
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ultrices mauris, vel egestas metus. Pellentesque ante sem, commodo hendrerit laoreet quis, dictum vitae risus. </p>
+                          <a class="btn btn-link mt-1" href="https://getbootstrap.com/" target="_blank">
+                            <i class="fas fa-link pull-left ml-n1 px-2 "></i>Link
+                          </a> 
+                      </div>
+                    </div>  
+                    
+                    
+                  </div> -->
+                  
+                <!-- card three -->
+                  
+                <!-- <div class="card click-card rounded border-0">
+                    
+                    
+                    <div class="front card-face">
+                    <img class="card-img rounded opac" src="http://placekitten.com/288/290" alt="Card image cap">
+                      <div class="card-img-overlay">
+                        <h5 class="card-title text-center my-5 py-5">Card title</h5>
+                      </div>
+                    </div>  
+                    
+                    
+                    <div class="back card-face rounded text-center">
+                      <div class="card-body mt-3">
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ultrices mauris, vel egestas metus. Pellentesque ante sem, commodo hendrerit laoreet quis, dictum vitae risus. </p>
+                          <a class="btn btn-link mt-1" href="https://getbootstrap.com/" target="_blank">
+                            <i class="fas fa-link pull-left ml-n1 px-2 "></i>Link
+                          </a> 
+                      </div>
+                    </div>  
+                    
+                    
+                  </div> 
+                
+               </div>
+                
+              
+                  
+                    
+                    
+               
+
+            
+
+        </div>
+
+        -->   
+
+          
+
+         
+        
+          
+
+     
+
+      
+
+
+          
+          
+          
+        
+      
+      
+      
+     
+
+
+    
+
+
+    <!-- End of project section-->
+
+  
+    <!-- Contact form. Be sure to change the email address the form gets sent to please. -->
+    <div class="row mb-1 my-3 px-3 py-4" id="contact">
+    
+      <div class="col-md-12"><h2 class="heads text-center pb-1">Contact </h2></div>
+      <div class="row">
+  
+        
+        
+          <form id="contactform" class="mx-4 my-2 rounded">
+            <div class="form-row">
+
+              <div class="form-group col-md-6">
+                <label for="inputfirstname">First Name</label>
+                <input type="text" class="form-control" placeholder="First Name">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="inputlastname">Last Name</label>
+                <input type="text" class="form-control" placeholder="Last Name">
+              </div>
+
+            </div>
+
+
+            <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+            </div>
+
+            <div class="btn-group">
+              <button type="submit" class="btn btncon mr-3 rounded">Submit</button>
+              <button type="reset" class="btn btncon rounded">Clear Form</button>
+            </div>
+
+
+          </form>  
+
+     
+
+      
+
+      </div>
+    </div>  
+    <!--end contact section-->
+
+
+</div> 
+<!--end container fluid-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   
+
+        
+</main>    
+
+
+
+<!--Footer -->
+<div id="bot-custom">
+   <div class="row">
+
+      
+
+
+          
+
+            
+            <!--Bootstrap -->  
+            <div class="col align-self-start ml-5">
+              Built with 
+              <svg viewBox="0 0 512 512" aria-label="heart" class="fas fa-heart" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg" id="heart" alt="red heart">
+                <path fill-rule="evenodd" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
+                199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+              </svg>
+              
+              in 
+              
+              <a href="https://www.amycodes.net/" class="footlinks">
+                <svg viewBox="0 0 448 512" aria-label="Bootstrap!" class="fab fa-bootstrap icons" fill="currentColor" 
+                xmlns="http://www.w3.org/2000/svg" id="boot" alt="bootstrap icon">
+                  <path fill-rule="evenodd" d="M292.3 311.93c0 42.41-39.72 41.43-43.92 41.43h-80.89v-81.69h80.89c42.56 
+                  0 43.92 31.9 43.92 40.26zm-50.15-73.13c.67 0 38.44 1 38.44-36.31 0-15.52-3.51-35.87-38.44-35.87h-74.66v72.18h74.66zM448 
+                  106.67v298.66A74.89 74.89 0 0 1 373.33 480H74.67A74.89 74.89 0 0 1 0 405.33V106.67A74.89 74.89 0 0 1 
+                  74.67 32h298.66A74.89 74.89 0 0 1 448 106.67zM338.05 317.86c0-21.57-6.65-58.29-49.05-67.35v-.73c22.91-9.78 37.34-28.25 37.34-55.64 0-7 
+                  2-64.78-77.6-64.78h-127v261.33c128.23 0 139.87 1.68 163.6-5.71 14.21-4.42 52.71-17.98 52.71-67.12z">
+                </svg> 
+              </a>
+            </div> 
+            
+            <!--end of bootstrap-->
+
+            
+            <div class="col align-self-center"></div>
+            
+            <!-- LinkedIn -->
+            <div class="col ml-5 float-right">
+              <a href="https://www.linkedin.com" title="LinkedIn" class="footlinks">
+                <svg viewBox="0 0 448 512" aria-label="Bootstrap!" class="fab fa-linkedin icons" fill="currentColor" 
+                xmlns="http://www.w3.org/2000/svg" id="linkedin" alt="linkedin icon">
+                  <path fill-rule="evenodd" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 
+                  416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 
+                  243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                </svg>
+              </a>
+            </div>
+     
+            
+          
+
+          
+          
+
+   
+  
+         
+  </div> 
+      
+</div>
+
+
+
+
+
+    
+    
+    
+   
+
+
+    <!-- jquery and fontawesome -->
+    
+    <!-- <script src="http://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+      
+    <script>window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"><\/script>')</script> -->
+
+     <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+     <!--jQuery -->
+ 
+ 
+    
+    
+    
+</body>
+</html>
+
