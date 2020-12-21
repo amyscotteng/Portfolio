@@ -1,44 +1,25 @@
-/* I used Google Fonts for this build. You can change it to whatever you like. I recommend Google Fonts as it gives you a pairing for your main text selection. 
-If you find there's a paid font you like somewhere else, you can use fontsquirrel to find a free equivalent.
-Colors used in this theme are colorblind safe. If you REALLY want to change them, I would suggest using Adobe Color to help you determine a palette that does. 
-Let's keep the web accesible for all :) */
+/* I used Google Fonts for this build and colors used for my website are colorblind safe. I fully believe in keeping the web accesible for all :) */
 
 body {
-    padding-top: 56px;
+   
+    padding: 30px 0;
     font-family: 'Titillium Web', sans-serif;
-    margin-bottom: 60px;
     background-color: #D4D4DC;
-    min-width: 100%;
-
+    
 }
 
-
-html {
-    position: relative;
-    min-width: 100%;
+.container {
+    max-width: 960px;
 }
+
 
 p {
-    
     font-size: 20px;
     color: #000;
 }
 
-.container {
-    width: 100%;
-}
 
-.btn-cust {
-    background-color: #393F4D;
-    border-color: #393F4D;
-    color: #FFF;
-}
 
-.btn-cust:hover {
-    background-color: #D4D4DC;
-    color: #000;
-    border-color: #D4D4DC;
-}
 
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(254,218,106,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -51,7 +32,7 @@ p {
 } 
 
 
-/* The following customizes the navigation links*/ 
+/* Navigation links*/ 
 
 .navbar-custom {
     background-color: #393F4D;
@@ -117,24 +98,36 @@ a.anchlink:hover::after {
 
 /* jumbotron */
 .jumbotron {
-    
+    color: #FEDA6A;
     background-image: url(../images/codingbw.png);
-    justify-content: center;
+    width:100%;
+    position:relative;
     opacity: 0.85;
+    border-radius: 0px;
+    
+    
+ 
+ 
 }
 
 
 
 
+    
 
 
-/* The following two items are for the first line which types out */
+h1 {
+    -webkit-text-stroke: 1px #000;
+}
+
+
+/* Typing text */
 .typing {
-    overflow: hidden; 
-  border-right: 20px solid #FEDA6A; 
+    
+  border-right: 20px solid #FEDA6A;  
   white-space: nowrap; 
   margin: 0 auto; 
-  letter-spacing: 2px; 
+  letter-spacing: 2px;
   animation: animated-text 
     4s steps(40,end) 1s 1 normal both,
     animated-cursor 800ms steps(40,end) infinite;
@@ -155,7 +148,7 @@ a.anchlink:hover::after {
     to{border-right-color: transparent;}
   }
 
-/* This is for line two, which fades in */
+/* Fading in */
 
 .fading {
     animation: 
@@ -186,14 +179,26 @@ a.anchlink:hover::after {
 /* This make text hug the outside of the image */
 #biopic {
     shape-outside: circle(50%);
-    width: 150px;
-    height: 150px;
+    
 }
+
+
 
 #heart {
     color: #FF0000;
 }
 
+.fa-bread-slice {
+    width: 20px;
+    height: 20px;
+    color: #d9baa7;
+    
+}
+
+.fa-bread-slice path {
+    stroke:#000;
+    stroke-width: 30px;
+}
 
 /* This is the project section */
 
@@ -209,10 +214,55 @@ a.anchlink:hover::after {
     
 }
 
-
-
-
 .card {
+    min-width: 288px;
+    
+}
+
+.img-fluid {
+    
+    width: 200px;
+    height: 200px;
+}
+
+.square {
+    display:inline-block;
+    position:relative; 
+    overflow: hidden;
+}
+
+.square-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgb(254,189,86, 0.55);
+}
+
+.square a {
+    color:transparent;
+}
+
+.square a:hover .square-overlay {
+    opacity: 1;
+}
+
+.square-overlay span {
+    margin: auto;
+    position: absolute;
+}
+
+
+
+
+
+
+/* .card {
     width: 288px;
     height: 290px;
     -webkit-transform-style: preserve-3d;
@@ -220,15 +270,13 @@ a.anchlink:hover::after {
     -webkit-transition: all .5s linear;
     transition: all .5s linear;
     
-}
+} 
 
 .card-text {
     font-size: 18px;
 }
   
-  .opac {
-    opacity: 0.9;
-  }
+
   
   .card-face {
     position: absolute;
@@ -250,15 +298,19 @@ a.anchlink:hover::after {
     position: absolute;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
   }
   
   .flipped {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
-  }
+  }*/
   
   .btn {
-    background-color: #737373;
+    background-color: #393f4d;
     color: #FFF;
   }
   
@@ -287,13 +339,13 @@ a.anchlink:hover::after {
 }
 
 /* Contact form */
-#contactform {
-    background-color: #393F4D;
+#contact-form {
+    
     padding: 15px;
 }
 
 label {
-    color: #FFF;
+    color:#000;
 }
 
 .form-group, .btncon, .form-control {
@@ -301,12 +353,19 @@ label {
 }
 
 .btncon {
-    background-color: #1D1E22;
+    background-color: #393F4D;
 }
 
 .btncon:hover {
     color: #000;
 }
+
+.g-recaptcha > div {
+    margin: 0 auto;
+}
+
+
+
 
 /*  */
 

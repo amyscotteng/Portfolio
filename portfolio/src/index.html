@@ -8,20 +8,20 @@
     <!--DO NOT REMOVE ANYTHING ABOVE THIS LINE -->
 
     <!--Favicon below. Be sure to change it to your own logo :) -->
-    <link rel="icon" href="http://placekitten.com/30" type="image/x-icon">
+    <link rel="icon" href="images/mylogo.png" type="image/x-icon">
     
     <!-- Simply remove my text and replace it with yours below! -->  
-    <title>Name and profession here</title>
+    <title>Amy Scott - Web Developer</title>
 
     
 
 <!-- Bootstrap core CSS. WARNING: DO NOT CHANGE ANYTHING IN THIS FILE. -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Custom styles. If you want to change font, colors, etc, use the css file below  -->
+<!-- Custom styles -->
 <link href="css/jumbotron.css" rel="stylesheet">
       
-<!-- My current fonts for this project. Check out Google fonts if you'd like to change them! -->      
+<!--Google Fonts -->      
 <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web&display=swap" rel="stylesheet">
 
 <!--jquery-->
@@ -40,6 +40,11 @@
 
 
 
+<!-- Google reCAPTCHA -->
+<script src="http://www.google.com/recaptcha/api.js"></script>
+
+
+
 </head>
 
 
@@ -52,7 +57,7 @@
 <nav class="navbar-custom navbar navbar-expand-md navbar-dark fixed-top" role="navigation">
   <!-- Your logo/branding goes between the a tags below. Be sure to change the images used - or not. Goats rule.  -->
   
-  <a class="navbar-brand"><img id="logo" src="http://placekitten.com/30" alt="Your logo"></a>
+  <a class="navbar-brand homelink" href="#home"><img id="logo" src="images/mylogo.png" alt="Your logo"></a>
 
   <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbartop" aria-controls="navbartop" aria-expanded="false" 
   aria-label="Toggle navigation" alt="Toggle" title="Toggle navigation">
@@ -92,6 +97,14 @@
 
 <!-- Just change the words and it'll type out your choice! No JS! You can also change the header image to whatever you like in the custom CSS under jumbotron class-->
 
+  <div class="jumbotron mt-4 pt-5" id="home">
+
+    <div class="container pt-3 text-center">
+        <h1 class="transp pt-2">Line #1</h1>
+        <h1 class="linetwo">Line #2</h1>
+    </div>
+
+  </div>
 
       
     
@@ -105,33 +118,42 @@
     </div>
   end of jumbotron -->
 
-  <div class="jumbotron jumbotron-fluid py-2" id="home">
+  
+
+<main role="main">
+  
+  
+ <!--  <div class="jumbotron py-2 w-100" id="home">
     <div class="container text-center">
       <h2 class="fading pt-5 mt-3">Hi. I'm Amy.</h2>
       <h2 class="typing py-5">I am a </h2>
     </div>
-  </div>
+  </div> -->
 
-<main role="main">
+
 
 <div class="container-fluid">    
   
   
   
-  <!--About section. This is your chance to write an award winning biography about yourself! Be unique! -->
+  <!--About section -->
   
 
-  <div class="row my-n5 py-1 px-3" id="projects">
+  <div class="row my-n5 py-4 px-3" id="about">
     
 
-    <div class="row">
+    <div class="row py-4">
 
-      <div class="col-md-12"><h2 class="heads text-center pb-1">I am a front-end web developer. </h2></div>
+      <div class="col-12">
+        
+        <h2 class="heads text-center pb-1">About</h2>
+      
+      </div>
      
-        <div class="col-md-6">
+        <div class="col-sm-6">
       
           
-          <img src="images/ANW-79.jpg" class="float-left mx-4 rounded-circle mt-3" id="biopic">
+          <img src="images/ANW-79.jpg" class="float-left mx-4 rounded-circle mt-1 img-fluid" id="biopic">  
           
           <p>I have been coding for many years and still love it as much as I did on day one. I have seen many changes over the 
           years but I've kept up. Coding is awesome and I love learning all of the new things that are coming
@@ -140,13 +162,21 @@
 
         </div>  
      
-        <div class="col-md-6">
+        <div class="col-sm-6">
 
           <p>
-            Everyone needs a break once in a while! Those include camping, going to concerts 
-            with friends, swimming, taekwondo, Bigfoot, watching HGTV, and video games. I enjoy a variety 
+            Those include camping, going to concerts with friends, swimming, taekwondo, Bigfoot, watching HGTV and many historical dramas, and video games. I enjoy a variety 
             of game types including MMOs and puzzle games.  I am also a huge TMNT fan and still have all 50 of my action figures from 
             when I was growing up. They are my most prized possessions. Most importantly: I love sourdough bread.
+
+            
+              <svg viewBox="0 0 576 512" aria-label="breadslice" class="fas fa-bread-slice mt-n2" fill="currentColor" 
+              xmlns="http://www.w3.org/2000/svg" id="bread" alt="delicious bread!">
+                <path fill-rule="evenodd" d="M288 0C108 0 0 93.4 0 169.14 0 199.44 24.24 224 64 224v256c0 17.67 16.12 32 
+                36 32h376c19.88 0 36-14.33 36-32V224c39.76 0 64-24.56 64-54.86C576 93.4 468 0 288 0z">
+              </svg> 
+            
+
             </p>
 
         </div>
@@ -167,16 +197,19 @@
   
 <!--end about section -->
 
-    <!-- Projects  -->
-    <div class="row mb-1 my-3 px-3 py-4" id="projects">
+    <!-- Projects -->
+    <div class="row mb-1 my-3 py-4" id="projects">
     
-      <div class="col-md-12">
-        <h2 class="heads text-center py-2">Projects </h2>
+      <div class="col-12">
+        
+        <h2 class="heads text-center pb-1">Projects</h2>
       
-      
-        <div class="row justify-content-center">
+      </div>  
+        
 
-              <nav class="py-2">
+      <div class="col-12 text-center">
+
+              <nav class="py-2 ml-n5">
       
                 <ul id="filters" class="clearfix">  
                   <li class="mininav" data-filter=".all, .fitype, .sectype, .thtype"><a href="#" class="portlink">All</a></li> |
@@ -187,18 +220,86 @@
             
               </nav>
 
-        </div>  
-      </div>  
+      </div>   
+
+      <div class="container">
+
+        <div class="row no-gutters d-flex justify-content-center" id="picgrid">
+  
+          
+          
+           
+          
+    <div class="col-offset">
+
+      <div class="square"> 
+        <a href="#">
+          <div class="square-overlay">
+            <span class="fas fa-link">
+              
+              <p class="justify-content-center">Info</p>
+            </span>
+          </div>
+
+          <img class="img-fluid" src="images/greatwhite.jpg" alt="happyshark">
+        </a>
+      </div>
+
+      
+
+    </div>
+
+
+    
+
+
+
+          
+
+          
+          
+         
+          
+          
+        </div> 
+          
+          
+          
+           
+        
+          
+          
+        </div>
+        
+          
 
         
-            
+
+
+
+
+
+      </div>
+      
+
+
+ <!--
+      <div class="card-deck mx-3">
+
+
+         
+
+
+        
+
+
+      
+     
           <div class="row mx-auto">
 
             <div class="card-deck ml-4 ">
     
-             <!-- Border-0 gets rid of the default Bootstrap border -->   
-                  
-                <!-- card one -->
+             
                  <div class="card click-card rounded border-0">
                    
                    
@@ -221,10 +322,8 @@
                    
                    
                  </div> 
-                 <!-- end of card one -->
+                 
 
-
-                 <!-- card two  -->
                  <div class="card click-card rounded border-0">
                    
                    
@@ -247,11 +346,11 @@
                   
                   
                 </div> 
-               <!--  end of card two -->
+               
 
-               <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+               <div class="w-100 d-none d-sm-block d-md-none"></div>
 
-              <!-- card three  -->
+              
               <div class="card click-card rounded border-0">
                    
                    
@@ -274,9 +373,7 @@
                 
                 
               </div> 
-             <!--  end of card three -->
-
-             <!-- card four  -->
+             
              <div class="card click-card rounded border-0">
                    
                    
@@ -299,11 +396,11 @@
               
               
             </div> 
-           <!--  end of card four -->
+           
 
-           <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+           <div class="w-100 d-none d-sm-block d-md-none"></div>
 
-           <!-- card five  -->
+           
            <div class="card click-card rounded border-0">
                    
                    
@@ -326,163 +423,26 @@
             
             
           </div> 
-         <!--  end of card five -->
+        
 
 
 
 
 
             </div>
-            <!-- end of deck -->
-
-
-          </div>  
-          <!-- end of row--> 
-
-
-
             
-  
-        
-      
-      
-  
-  
-      
-  
+
+
+          </div>   --> 
+         
+
+
     </div>
 
+      
+          
+
         
-          
-
-        <!-- This menu filters your projects by type. Change the class to reflect your project type. -->
-        <!-- <nav>
-      
-          <ul id="filters" class="clearfix">  
-            <li class="mininav" data-filter=".all, .fitype, .sectype, .thtype"><a href="#" class="portlink">All</a></li> |
-            <li class="mininav" data-filter=".all, .fitype"><a href="#" class="portlink">Web Development</a></li> |
-            <li class="mininav" data-filter=".all, .sectype"><a href="#" class="portlink">Apps</a></li> |
-            <li class="mininav" data-filter=".all, .thtype"><a href="#" class="portlink">Browser Console Games</a></li>
-          </ul>
-      
-        </nav>   -->
-
-      
-        <!--The cards for your projects go below. I used fontawesome icons. For more info and how to impliment them, go to https://fontawesome.com/ -->
-        
-
-      <!--
-        <div class="row my-4 ml-3">
-
-
-          
-
-            <div class="card-deck ml-2">
-    
-               Border-0 gets rid of the default Bootstrap border -->    
-                   <!-- card one -->
-                   <!-- <div class="card click-card rounded border-0">
-                    
-                    
-                    <div class="front card-face">
-                    <img class="card-img rounded opac" src="http://placekitten.com/288/290" alt="Card image cap">
-                      <div class="card-img-overlay">
-                        <h5 class="card-title text-center my-5 py-5">Card title</h5>
-                      </div>
-                    </div>  
-                    
-                   
-                    <div class="back card-face rounded text-center">
-                      <div class="card-body mt-3">
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ultrices mauris, vel egestas metus. Pellentesque ante sem, commodo hendrerit laoreet quis, dictum vitae risus. </p>
-                          <a class="btn btn-link mt-1" href="https://getbootstrap.com/" target="_blank">
-                            <i class="fas fa-link pull-left ml-n1 px-2 "></i>Link
-                          </a> 
-                      </div>
-                    </div>  
-                    
-                    
-                  </div>     -->          
-                  
-                  
-                  <!-- card two -->
-                  
-                  <!-- <div class="card click-card rounded border-0">
-                    
-                    
-                    <div class="front card-face">
-                    <img class="card-img rounded opac" src="http://placekitten.com/288/290" alt="Card image cap">
-                      <div class="card-img-overlay">
-                        <h5 class="card-title text-center my-5 py-5">Card title</h5>
-                      </div>
-                    </div>  
-                    
-                   
-                    <div class="back card-face rounded text-center">
-                      <div class="card-body mt-3">
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ultrices mauris, vel egestas metus. Pellentesque ante sem, commodo hendrerit laoreet quis, dictum vitae risus. </p>
-                          <a class="btn btn-link mt-1" href="https://getbootstrap.com/" target="_blank">
-                            <i class="fas fa-link pull-left ml-n1 px-2 "></i>Link
-                          </a> 
-                      </div>
-                    </div>  
-                    
-                    
-                  </div> -->
-                  
-                <!-- card three -->
-                  
-                <!-- <div class="card click-card rounded border-0">
-                    
-                    
-                    <div class="front card-face">
-                    <img class="card-img rounded opac" src="http://placekitten.com/288/290" alt="Card image cap">
-                      <div class="card-img-overlay">
-                        <h5 class="card-title text-center my-5 py-5">Card title</h5>
-                      </div>
-                    </div>  
-                    
-                    
-                    <div class="back card-face rounded text-center">
-                      <div class="card-body mt-3">
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ultrices mauris, vel egestas metus. Pellentesque ante sem, commodo hendrerit laoreet quis, dictum vitae risus. </p>
-                          <a class="btn btn-link mt-1" href="https://getbootstrap.com/" target="_blank">
-                            <i class="fas fa-link pull-left ml-n1 px-2 "></i>Link
-                          </a> 
-                      </div>
-                    </div>  
-                    
-                    
-                  </div> 
-                
-               </div>
-                
-              
-                  
-                    
-                    
-               
-
-            
-
-        </div>
-
-        -->   
-
-          
-
-         
-        
-          
-
-     
-
-      
-
-
-          
-          
-          
         
       
       
@@ -496,60 +456,174 @@
     <!-- End of project section-->
 
   
-    <!-- Contact form. Be sure to change the email address the form gets sent to please. -->
-    <div class="row mb-1 my-3 px-3 py-4" id="contact">
+    <!-- Contact section -->
+
     
-      <div class="col-md-12"><h2 class="heads text-center pb-1">Contact </h2></div>
-      <div class="row">
+    <div class="row mb-1 my-3 py-4" id="contact">
+    
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-12">
+        
+            <h2 class="heads text-center pb-1">Contact</h2>
+          
+          </div>  
+
+         
+            
+
+                <div class="px-2 col-8 mx-auto p-4 flex-nowrap">
+
+                    <!-- <form id="contact-form" method="POST" name="emailform" action="sendemail.php" role="form" class=" justify-content-center">
+
+                     
+                      <div class="messages text-center h3"></div>
+
+                      <div class="form-row">
+
+                        <div class="form-group col">
+                            <label for="inputfirstname" aria-label="Name">Name</label>
+                            <input id="form_name" name="name" type="text" class="form-control" placeholder="Name" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                      </div>
+
+                        <div class="form-group">
+                            <label for="inputlastname" aria-label="Email address">Email</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="youremail@domain.com" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="inputtext" aria-label="Your message">Message</label>
+                          <textarea id="form_message" name="message" class="form-control" rows="5" placeholder="Type your message here." required></textarea>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                        
+                        
+                        <div class="col mt-4">
+                          <div class="g-recaptcha" data-sitekey="6LevJgAaAAAAAHuGLPhHaqq3tXuONPyHDbmSddBD"></div>  
+                        </div>
+
+                        <div class="form-group mt-4 text-center">
+                          
+                            <button type="submit" class="btn mr-3 rounded" onclick="submit" aria-label="Submit button">Submit</button>  
+                            <button type="reset" class="btn rounded" aria-label="Clear form">Clear Form</button>
+                        
+                        </div>
+
+
+
+
+
+                    </form> -->
+
+                    <form id="contact-form" method="post" action="sendemail.php" role="form">
+
+                      <div class="messages"></div>
+                  
+                      <div class="controls">
+                  
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label for="form_name">Firstname *</label>
+                                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label for="form_lastname">Lastname *</label>
+                                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label for="form_email">Email *</label>
+                                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label for="form_need">Please specify your need *</label>
+                                      <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                          <option value=""></option>
+                                          <option value="Request quotation">Request quotation</option>
+                                          <option value="Request order status">Request order status</option>
+                                          <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                          <option value="Other">Other</option>
+                                      </select>
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="form-group">
+                                      <label for="form_message">Message *</label>
+                                      <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                              <div class="col-md-12">
+                                  <input type="submit" class="btn btn-success btn-send" value="Send">
+                                  <input type="reset"  class="btn btn-success" value="Clear">
+                              </div>
+                          </div>
+                          
+                      </div>
+                  
+                  </form>
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+          
+
+        </div>
+      
+      </div>
+
+    </div>
+      
+
+    </div>  
+      
+          
+          
+
+    
   
+
         
-        
-          <form id="contactform" class="mx-4 my-2 rounded">
-            <div class="form-row">
-
-              <div class="form-group col-md-6">
-                <label for="inputfirstname">First Name</label>
-                <input type="text" class="form-control" placeholder="First Name">
-              </div>
-
-              <div class="form-group col-md-6">
-                <label for="inputlastname">Last Name</label>
-                <input type="text" class="form-control" placeholder="Last Name">
-              </div>
-
-            </div>
-
-
-            <div class="form-group">
-              <label for="inputEmail">Email</label>
-              <input type="email" class="form-control" placeholder="Email">
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea class="form-control" rows="3" placeholder="Message"></textarea>
-            </div>
-
-            <div class="btn-group">
-              <button type="submit" class="btn btncon mr-3 rounded">Submit</button>
-              <button type="reset" class="btn btncon rounded">Clear Form</button>
-            </div>
-
-
-          </form>  
-
      
 
       
 
-      </div>
-    </div>  
+      
     <!--end contact section-->
 
 
-</div> 
-<!--end container fluid-->
 
+<!--end container fluid-->
+</div> 
 
 
 
@@ -656,7 +730,10 @@
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-     <!--jQuery -->
+
+
+    <!-- Email form JS-->
+<script src="js/contact.js"></script>
  
  
     

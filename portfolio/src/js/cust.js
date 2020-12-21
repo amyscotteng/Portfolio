@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 //Smooth scrolling for navigation
 
-const scrlink = $('.anchlink').click(function (e) {
+const scrlink = $('.anchlink, .homelink').click(function (e) {
   e.preventDefault();
   var target = $($(this).attr('href'));
   if (target.length) {
@@ -15,8 +15,8 @@ const scrlink = $('.anchlink').click(function (e) {
 
 
 // This highlights the menu item for the current section
-  const currsect = $('.navbar-nav .nav-link').click(function () {
-    $('.navbar-nav .nav-link').removeClass('active');
+  const currsect = $('.navbar-nav .nav-link .homelink').click(function () {
+    $('.navbar-nav .nav-link .homelink').removeClass('active');
     $(this).addClass('active');
   });
 
@@ -27,5 +27,11 @@ $(".click-card").click(function(){
 });
 
 // Filtering for portfolio
+
+
+//Typed.js - A JavaScript library by Matt Boldt
+
+
+
 
 });
