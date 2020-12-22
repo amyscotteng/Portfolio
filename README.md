@@ -1,10 +1,7 @@
-My portfolio website, built in Bootstrap 4.0 
+My portfolio website
 
-Includes the following:
+Built using:
 
-<ul>
-    <li>Google Fonts</li>
-    <li>jQuery</li>
-    <li>FontAwesome</li>
+<a href="https://github.com/twbs/bootstrap" target="_blank"><img src="https://github.com/amyscotteng/portfolio/blob/main/src/images/boot.png" width="200" height="150"></a>
 
-</ul>
+
