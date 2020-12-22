@@ -19,9 +19,11 @@ This project was designed to show off my skills developing with Bootstrap. Thusf
 * FontAwesome
 
 ## Features
-List of features ready and TODOs for future development
+
 * Mobile friendly
 * Uses animations with both jQuery and CSS
+* Colors used are colorblind safe
+* Developed using <a href="https://www.ssa.gov/accessibility/andi/help/install.html">ANDI</a> (Accessible Name & Description Inspector)
 
 To-do list:
 * Fix email form 
