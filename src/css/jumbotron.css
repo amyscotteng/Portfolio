@@ -1,0 +1,432 @@
+/* I used Google Fonts for this build and colors used for my website are colorblind safe. I fully believe in keeping the web accesible for all :) */
+
+body {
+   
+    padding: 30px 0;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #D4D4DC;
+    
+}
+
+.container {
+    max-width: 960px;
+}
+
+
+p {
+    font-size: 20px;
+    color: #000;
+}
+
+
+
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(254,218,106,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    width: 20px;
+    height: 20px;
+}
+  
+.custom-toggler.navbar-toggler {
+    border-color: #FEDA6A;
+} 
+
+
+/* Navigation links*/ 
+
+.navbar-custom {
+    background-color: #393F4D;
+    
+}
+
+nav .navbar-nav .nav-item > .anchlink,
+nav .filters .mininav {
+    color: #FEDA6A;
+    text-decoration: none;
+    z-index: 100;
+    font-size: 18px;
+
+}
+
+a.portlink, a.anchlink {
+    color: #FEDA6A;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    
+}
+
+a.portlink:hover, a.anchlink:hover {
+    color: #FFF;
+}
+
+a.anchlink::after {    
+    background: none repeat scroll 0 0 #FEDA6A;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transition: width 0.8s ease 0s, left 0.8s ease 0s;
+    width: 0;
+}
+
+a.anchlink:hover::after { 
+    width: 100%; 
+    left: 0; 
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #FEDA6A;
+}  
+
+
+.mininav, .navbar-custom {
+    font-size: 16px;
+}
+
+
+/* this is for your logo */
+#logo {
+    margin: 0 auto;
+    display: inline-flex;
+}
+
+
+
+
+
+/* jumbotron */
+.jumbotron {
+    color: #FEDA6A;
+    background-image: url(../images/codingbw.png);
+    width:100%;
+    position:relative;
+    opacity: 0.85;
+    border-radius: 0px;
+    
+    
+ 
+ 
+}
+
+
+
+
+    
+
+
+h1 {
+    -webkit-text-stroke: 1px #000;
+}
+
+
+/* Typing text */
+.typing {
+    
+  border-right: 20px solid #FEDA6A;  
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: 2px;
+  animation: animated-text 
+    4s steps(40,end) 1s 1 normal both,
+    animated-cursor 800ms steps(40,end) infinite;
+  justify-content: center;  
+  color: #FEDA6A;
+  font-weight: 500;
+}
+
+/* The typing effect */
+@keyframes animated-text {
+    from{width: 0;}
+    to{width: 220px;}
+  }
+
+/* The typewriter cursor effect */
+@keyframes animated-cursor{
+    from{border-right-color: #FEDA6A; }
+    to{border-right-color: transparent;}
+  }
+
+/* Fading in */
+
+.fading {
+    animation: 
+        fadeIn ease 7s forwards ,
+        blink-caret .75s steps(50,end) infinite;
+}
+
+@keyframes fadeIn {
+    0%, 100% {
+        opacity:0;
+        -webkit-text-stroke: 1.5px #FEDA6A;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #FEDA6A;
+    }
+    
+    100% {
+        opacity:1;
+        -webkit-text-stroke: 1.5px #FEDA6A;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #FEDA6A;
+    }
+}
+
+
+
+/* This is the about section */
+
+/* This make text hug the outside of the image */
+#biopic {
+    shape-outside: circle(50%);
+    
+}
+
+
+
+#heart {
+    color: #FF0000;
+}
+
+.fa-bread-slice {
+    width: 20px;
+    height: 20px;
+    color: #d9baa7;
+    
+}
+
+.fa-bread-slice path {
+    stroke:#000;
+    stroke-width: 30px;
+}
+
+/* This is the project section */
+
+#projects {
+    background-color: #393F4D;
+    color: #FFF;
+}
+
+.mininav {
+    list-style-type: none; 
+    text-decoration: none;
+    display: inline;
+    
+}
+
+.card {
+    min-width: 288px;
+    
+}
+
+.img-fluid {
+    
+    width: 200px;
+    height: 200px;
+}
+
+.square {
+    display:inline-block;
+    position:relative; 
+    overflow: hidden;
+}
+
+.square-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgb(254,189,86, 0.55);
+}
+
+.square a {
+    color:transparent;
+}
+
+.square a:hover .square-overlay {
+    opacity: 1;
+}
+
+.square-overlay span {
+    margin: auto;
+    position: absolute;
+}
+
+
+
+
+
+
+/* .card {
+    width: 288px;
+    height: 290px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+    
+} 
+
+.card-text {
+    font-size: 18px;
+}
+  
+
+  
+  .card-face {
+    position: absolute;
+    width: 288px;
+    height: 290px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .back {
+    background-color: #9C9C9C;
+    color: #000;
+    transform: rotateY(180deg);
+  }
+  
+  
+  .front, .back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+  }
+  
+  .flipped {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }*/
+  
+  .btn {
+    background-color: #393f4d;
+    color: #FFF;
+  }
+  
+  .btn:hover {
+    background-color: #bfbfbf;
+    color: #000;
+    text-decoration: none;
+  }
+
+
+
+.heads {
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+/* These are the colors for the about and contact sections */
+#about, #contact {
+    background-color: #D4D4DC;
+    
+}
+
+/* Contact form */
+#contact-form {
+    
+    padding: 15px;
+}
+
+label {
+    color:#000;
+}
+
+.form-group, .btncon, .form-control {
+    font-size: 12px;
+}
+
+.btncon {
+    background-color: #393F4D;
+}
+
+.btncon:hover {
+    color: #000;
+}
+
+.g-recaptcha > div {
+    margin: 0 auto;
+}
+
+
+
+
+/*  */
+
+
+/* This is the footer*/
+
+#bot-custom {
+    
+    width: 100%;
+    height: 60px; 
+    line-height: 60px; 
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #393F4D;
+    color: #FEDA6A;
+}
+
+
+    
+  
+
+
+
+
+
+.icons {
+    width: 20px;
+    height: 20px;
+    background-image: linear-gradient(#fff,#fff);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+/*These are the icons used in the footer. The linear gradient in these cases is simply the secondary fill color.*/
+
+#boot  {
+    color: #7952b3;
+    background-size: 50% 50%;
+}
+
+
+#linkedin  {    
+    background-size: 65% 65%;
+    color: #0077b5;
+}
+
+#heart {
+    color: #FF0000;
+    width: 20px;
+    height: 20px;
+}
+
+.footlinks {
+    text-decoration: none;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
