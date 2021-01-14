@@ -8,7 +8,7 @@ const scrlink = $('.anchlink, .homelink').click(function (e) {
   var target = $($(this).attr('href'));
   if (target.length) {
     var scrollTo = target.offset().top - 55;
-    $('body, html').animate({ scrollTop: scrollTo + 'px' }, 1500);
+    $('body, html').animate({ scrollTop: scrollTo + 'px' }, 1000);
   }
 });
 

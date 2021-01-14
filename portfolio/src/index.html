@@ -57,7 +57,7 @@
 <nav class="navbar-custom navbar navbar-expand-md navbar-dark fixed-top" role="navigation">
   <!-- Your logo/branding goes between the a tags below. Be sure to change the images used - or not. Goats rule.  -->
   
-  <a class="navbar-brand homelink" href="#home"><img id="logo" src="images/mylogo.png" alt="Your logo"></a>
+  <a class="navbar-brand homelink" href="#home" title="home"><img id="logo" src="images/mylogo.png" alt="Your logo"></a>
 
   <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbartop" aria-controls="navbartop" aria-expanded="false" 
   aria-label="Toggle navigation" alt="Toggle" title="Toggle navigation">
@@ -71,15 +71,15 @@
       
 
       <li class="nav-item">
-        <a href="#about" data-toggle="tab" class="anchlink nav-link text-center">About</a>
+        <a href="#about" data-toggle="tab" class="anchlink nav-link text-center" title="About">About</a>
       </li>
 
       <li class="nav-item">
-        <a href="#projects" data-toggle="tab" class="anchlink nav-link text-center">Projects</a>
+        <a href="#projects" data-toggle="tab" class="anchlink nav-link text-center" title="Projects">Projects</a>
       </li>
 
       <li class="nav-item">
-        <a href="#contact" data-toggle="tab" class="anchlink nav-link text-center">Contact</a>
+        <a href="#contact" data-toggle="tab" class="anchlink nav-link text-center" title="Contact">Contact</a>
       </li>
      
     </ul>
@@ -167,7 +167,8 @@
           <p>
             Those include camping, going to concerts with friends, swimming, taekwondo, Bigfoot, watching HGTV and many historical dramas, and video games. I enjoy a variety 
             of game types including MMOs and puzzle games.  I am also a huge TMNT fan and still have all 50 of my action figures from 
-            when I was growing up. They are my most prized possessions. Most importantly: I love sourdough bread.
+            when I was growing up. They are my most prized possessions. 
+            Most importantly: I love sourdough bread.
 
             
               <svg viewBox="0 0 576 512" aria-label="breadslice" class="fas fa-bread-slice mt-n2" fill="currentColor" 
@@ -212,10 +213,10 @@
               <nav class="py-2 ml-n5">
       
                 <ul id="filters" class="clearfix">  
-                  <li class="mininav" data-filter=".all, .fitype, .sectype, .thtype"><a href="#" class="portlink">All</a></li> |
-                  <li class="mininav" data-filter=".all, .fitype"><a href="#" class="portlink">Web Development</a></li> |
-                  <li class="mininav" data-filter=".all, .sectype"><a href="#" class="portlink">Apps</a></li> |
-                  <li class="mininav" data-filter=".all, .thtype"><a href="#" class="portlink">Browser Console Games</a></li>
+                  <li class="mininav" data-filter=".all, .fitype, .sectype, .thtype"><a href="#" class="portlink" title="All">All</a></li> |
+                  <li class="mininav" data-filter=".all, .fitype"><a href="#" class="portlink" title="Web Development">Web Development</a></li> |
+                  <li class="mininav" data-filter=".all, .sectype"><a href="#" class="portlink" title="Apps">Apps</a></li> |
+                  <li class="mininav" data-filter=".all, .thtype"><a href="#" class="portlink" title="Browser Console Games">Browser Console Games</a></li>
                 </ul>
             
               </nav>
@@ -232,20 +233,49 @@
           
     <div class="col-offset">
 
-      <div class="square"> 
-        <a href="#">
-          <div class="square-overlay">
-            <span class="fas fa-link">
-              
-              <p class="justify-content-center">Info</p>
-            </span>
-          </div>
 
-          <img class="img-fluid" src="images/greatwhite.jpg" alt="happyshark">
-        </a>
+      <div id="picgrid">
+        
+        <div class="square"> 
+          <a href="#">
+            <div class="square-overlay">
+              <span class="fas fa-link">
+                
+                <p class="justify-content-center">Info</p>
+              </span>
+            </div>
+
+            <img class="img-fluid" src="http://placekitten.com/200/" alt="A picture of a goat">
+          </a>
+        </div>
+
+        <div class="square"> 
+          <a href="#">
+            <div class="square-overlay">
+              <span class="fas fa-link">
+                
+                <p class="justify-content-center">Info</p>
+              </span>
+            </div>
+
+            <img class="img-fluid" src="http://placekitten.com/200/" alt="A picture of a goat">
+          </a>
+        </div>
+
+        <div class="square"> 
+          <a href="#">
+            <div class="square-overlay">
+              <span class="fas fa-link">
+                
+                <p class="justify-content-center">Info</p>
+              </span>
+            </div>
+
+            <img class="img-fluid" src="http://placekitten.com/200/" alt="A picture of a goat">
+          </a>
+        </div>
+
       </div>
-
-      
 
     </div>
 
@@ -668,7 +698,7 @@
               
               in 
               
-              <a href="https://www.amycodes.net/" class="footlinks">
+              <a href="https://getbootstrap.com/" class="footlinks">
                 <svg viewBox="0 0 448 512" aria-label="Bootstrap!" class="fab fa-bootstrap icons" fill="currentColor" 
                 xmlns="http://www.w3.org/2000/svg" id="boot" alt="bootstrap icon">
                   <path fill-rule="evenodd" d="M292.3 311.93c0 42.41-39.72 41.43-43.92 41.43h-80.89v-81.69h80.89c42.56 
@@ -683,12 +713,12 @@
             <!--end of bootstrap-->
 
             
-            <div class="col align-self-center"></div>
+            <div class="col align-self-end"></div>
             
             <!-- LinkedIn -->
             <div class="col ml-5 float-right">
               <a href="https://www.linkedin.com" title="LinkedIn" class="footlinks">
-                <svg viewBox="0 0 448 512" aria-label="Bootstrap!" class="fab fa-linkedin icons" fill="currentColor" 
+                <svg viewBox="0 0 448 512" aria-label="LinkedIn!" class="fab fa-linkedin icons" fill="currentColor" 
                 xmlns="http://www.w3.org/2000/svg" id="linkedin" alt="linkedin icon">
                   <path fill-rule="evenodd" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 
                   416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 

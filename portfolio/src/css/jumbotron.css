@@ -219,6 +219,10 @@ h1 {
     
 }
 
+#picgrid > img { 
+    display: block; 
+}
+
 .img-fluid {
     
     width: 200px;
