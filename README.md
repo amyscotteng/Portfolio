@@ -31,7 +31,7 @@ To-do list:
 * More testing with Chrome developer tools
 
 ## Status
-Project is: _in progress_. I'm always looking to make new improvements
+Project is: _in progress_. Is a project ever truly finished? :)
 
 ## Prototype
 Check out the link to the prototype <a href="https://xd.adobe.com/view/86b88c0f-f983-4e12-9c23-13640beaf84f-d3eb/">here</a>! Made in Adobe XD! It doesn't convey everything perfectly (ie the links don't scroll to the section of the page when you click them) but you can get a general idea of the look, feel, and functionality. 
