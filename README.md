@@ -34,7 +34,7 @@ To-do list:
 Project is: _in progress_. I'm always looking to make new improvements
 
 ## Prototype
-Check out the link to the prototype <a href="https://xd.adobe.com/view/073cab1e-4fb5-4e62-8b8f-260e3a3ec379-526f/">here</a>! Made in Adobe XD! It doesn't convey everything perfectly (ie the links don't scroll to the section of the page when you click them) but you can get a general idea of the look, feel, and functionality. 
+Check out the link to the prototype <a href="https://xd.adobe.com/view/86b88c0f-f983-4e12-9c23-13640beaf84f-d3eb/">here</a>! Made in Adobe XD! It doesn't convey everything perfectly (ie the links don't scroll to the section of the page when you click them) but you can get a general idea of the look, feel, and functionality. 
 
 ## Contact
 amyscotteng@gmail.com
